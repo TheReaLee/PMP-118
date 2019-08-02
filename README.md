@@ -23,6 +23,9 @@ Credentials can be found in the corresponding Jira ticket
 * S1 - Statistics on unused feature flags
 * S2 - Statistics on feature flags which have been turned on the last x days/months
 * S3 - Statistics on how many times the feature has been accessed and maybe by whom
+- - - -
+* E1 - Ease of use for non-technical users
+* E2 - Ease of use for technical users
 
 - - - -
 

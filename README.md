@@ -51,6 +51,7 @@ This project targets .NET Framework 4.5.2
 - Optimizely.SDK 3.2.0
 - Splitio 5.0.0
 - LaunchDarkly.ServerSdk 5.6.5
+- rox-server 4.5.0
 
 **Guide**
 * Step 1 - Clone the repo

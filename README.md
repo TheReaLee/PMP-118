@@ -2,11 +2,13 @@
 
 This project utilizes several FeatureFlag providers. The following providers are utilized:
 
-* FeatureFlow.io  
-* Rollout
-* Split.io
-* Optimizely
-* LaunchDarkly
+* FeatureFlow.io - https://shireburn.featureflow.io
+* Rollout - https://app.rollout.io/
+* Split.io - https://app.split.io/login
+* Optimizely - https://app.optimizely.com
+* LaunchDarkly - https://app.launchdarkly.com
+
+Credentials can be found in the corresponding Jira ticket
 
 - - - -
 
@@ -24,3 +26,39 @@ This project utilizes several FeatureFlag providers. The following providers are
 
 - - - -
 
+The following chart compares each provider against the requirements
+
+![picture alt](https://raw.githubusercontent.com/TheReaLee/PMP-118/master/PMP-118.png?token=AFOF5W2YTSQJNIJJMQLAQT25IPW7I "Feature Flag Providers")
+
+- - - -
+
+## Using this repo
+
+This project targets .NET Framework 4.5.2
+
+**Packages**
+- Featureflow 1.1.1
+- Optimizely.SDK 3.2.0
+- Splitio 5.0.0
+- LaunchDarkly.ServerSdk 5.6.5
+
+**Guide**
+* Step 1 - Clone the repo
+* Step 2 - Open Web.Config and Edit the Provider appSetting with one of the following values
+  * Split
+  * LaunchDarkly
+  * FeatureFlow
+  * Rollout
+  * Optimizely
+* Step 3 - Make sure that the Website is set as your startup project, and press F5
+* Step 4 - A menu item named 'Costings' is configured as a feature flag
+  * Log into the selected provider from the links above [Credentials found in PMP-118 ticket] and disable/enable the feature flag
+* Step 5 - Refresh the browser and notice the 'Costings' menu item being shown/hidden
+
+- - - -
+
+## Conclusion
+
+After having tested out each of the providers above keeping in mind ease of use for non-technical users, I can suggest the following providers
+* **Free**: Optimizely or Split.io (Split.io having more statistics features)
+* **Paid**: Launch Darkley or Optimizely [Full Stack]

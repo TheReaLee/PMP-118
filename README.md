@@ -29,9 +29,11 @@ Credentials can be found in the corresponding Jira ticket
 
 - - - -
 
-The following chart compares each provider against the requirements
+The following charts compares each provider against the requirements
 
 ![picture alt](https://github.com/TheReaLee/PMP-118/blob/master/PMP-118.png "Feature Flag Providers")
+
+![picture alt](https://github.com/TheReaLee/PMP-118/blob/master/PMP-118-EaseOfUse.png "Feature Flag Providers - Ease of Use")
 
 - - - -
 

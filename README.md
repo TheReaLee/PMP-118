@@ -14,16 +14,19 @@ Credentials can be found in the corresponding Jira ticket
 
 ## Requirements
 
+**Needs**
 * N1 - Enable/Disable a feature for a percentage of our users (Canary Releases)
 * N2 - Enable/Disable a feature for a particular tenant/tenants
 * N3 - Enable/Disable a feature fpr a group of tenants
 * N4 - Disabling a feature if an issue is encountered
 * N5 - Supports minimum JS, .NET Framework
 - - - -
+**Shoulds**
 * S1 - Statistics on unused feature flags
 * S2 - Statistics on feature flags which have been turned on the last x days/months
 * S3 - Statistics on how many times the feature has been accessed and maybe by whom
 - - - -
+**Ease of Use**
 * E1 - Ease of use for non-technical users
 * E2 - Ease of use for technical users (Complexity of SDK)
 
@@ -32,6 +35,8 @@ Credentials can be found in the corresponding Jira ticket
 The following charts compares each provider against the requirements
 
 ![picture alt](https://github.com/TheReaLee/PMP-118/blob/master/PMP-118.png "Feature Flag Providers")
+
+**The following ratings can be biased, I therefore suggest that you navigate through the provider's websites and decide for yourselves**
 
 ![picture alt](https://github.com/TheReaLee/PMP-118/blob/master/PMP-118-EaseOfUse.png "Feature Flag Providers - Ease of Use")
 
@@ -64,6 +69,8 @@ This project targets .NET Framework 4.5.2
 
 ## Conclusion
 
-After having tested out each of the providers above keeping in mind ease of use for non-technical users, I can suggest the following providers
+Rollout and FeatureFlow did not meet the **Needs** of the requirements thus are automatically excluded.
+
+Furthermore after having tested out each of the providers above, I can suggest the following:
 * **Free**: Optimizely or Split.io (Split.io having more statistics features)
-* **Paid**: Launch Darkley or Optimizely [Full Stack]
+* **Paid**: LaunchDarkly or Optimizely [Full Stack] (LaunchDarkly is easier to use and provides a much better experience for rolling out features based on a set of conditions )

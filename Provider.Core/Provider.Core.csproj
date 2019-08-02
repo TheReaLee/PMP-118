@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0500B6C-3301-4B44-AE09-AE4ABE45D1D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Provider.Core</RootNamespace>
+    <AssemblyName>Provider.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Provider.Common\Provider.Common.csproj">
+      <Project>{1c6f8c5b-4be7-48c9-99e6-aefef3e0b313}</Project>
+      <Name>Provider.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Provider.FeatureFlow\Provider.FeatureFlow.csproj">
+      <Project>{459cba80-2aa6-46f4-918b-84e38b6eac78}</Project>
+      <Name>Provider.FeatureFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Provider.LaunchDarkly\Provider.LaunchDarkly.csproj">
+      <Project>{648a106d-d530-40cb-b85f-440ec612a705}</Project>
+      <Name>Provider.LaunchDarkly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Provider.Optimizely\Provider.Optimizely.csproj">
+      <Project>{1ea59ca2-4670-4fa5-9d43-60981085ab8b}</Project>
+      <Name>Provider.Optimizely</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Provider.Rollout\Provider.Rollout.csproj">
+      <Project>{7ef1e13a-8993-43f5-b568-48eb73b27239}</Project>
+      <Name>Provider.Rollout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Provider.Split\Provider.Split.csproj">
+      <Project>{fdb88004-91cc-422c-ba05-4d87d5997eaf}</Project>
+      <Name>Provider.Split</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -73,4 +73,4 @@ Rollout and FeatureFlow did not meet the **Needs** of the requirements thus are 
 
 Furthermore after having tested out each of the providers above, I can suggest the following:
 * **Free**: Optimizely or Split.io (Split.io having more statistics features)
-* **Paid**: LaunchDarkly or Optimizely [Full Stack] (LaunchDarkly is easier to use and provides a much better experience for rolling out features based on a set of conditions )
+* **Paid**: LaunchDarkly or Optimizely [Full Stack] (LaunchDarkly is easier to use and provides a better experience for rolling out features based on a set of conditions)

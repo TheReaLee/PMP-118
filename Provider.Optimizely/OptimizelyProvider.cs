@@ -44,7 +44,7 @@ namespace Provider.Optimizely
             {
                 userAtrributes.Add(keyValuePair.Key, keyValuePair.Value);
             }
-            return _optimizelyClient.IsFeatureEnabled(feature.ToLower(), user.Email, userAtrributes);            
+            return _optimizelyClient.IsFeatureEnabled(feature.ToLower(), user.Email, userAtrributes);              
         }
     }
 }

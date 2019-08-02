@@ -25,7 +25,7 @@ namespace Provider.Rollout
         {
             if (feature.ToLower() == "costings")
             {
-                return _roxContainer.Costings.IsEnabled();
+                return _roxContainer.Costings.IsEnabled();                
             }
             else
             {

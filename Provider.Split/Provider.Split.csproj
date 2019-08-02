@@ -89,7 +89,7 @@
       <Project>{1c6f8c5b-4be7-48c9-99e6-aefef3e0b313}</Project>
       <Name>Provider.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Users\Security.csproj">
+    <ProjectReference Include="..\Security\Security.csproj">
       <Project>{a4b00cb6-4ee4-4843-8a7f-2e2e212f6575}</Project>
       <Name>Security</Name>
     </ProjectReference>

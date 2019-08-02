@@ -27,6 +27,7 @@ namespace Provider.Split
         public bool IsFeatureEnabled(string feature, User user)
         {
             var treatment = _splitClient.GetTreatment("123456", feature, user.GetAttributes());
+            _splitClient.Destroy();
             if (treatment == "on")
             {
                 return true;

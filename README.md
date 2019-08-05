@@ -36,7 +36,7 @@ The following charts compares each provider against the requirements
 
 ![picture alt](https://github.com/TheReaLee/PMP-118/blob/master/PMP-118.png "Feature Flag Providers")
 
-**The following ratings can be biased, I therefore suggest that you navigate through the provider's websites and decide for yourselves**
+**The following ratings can be biased, I therefore suggest that you navigate through the provider's websites and decide for yourself**
 
 ![picture alt](https://github.com/TheReaLee/PMP-118/blob/master/PMP-118-EaseOfUse.png "Feature Flag Providers - Ease of Use")
 
@@ -73,5 +73,5 @@ This project targets .NET Framework 4.5.2
 Rollout and FeatureFlow did not meet the **Needs** of the requirements thus are automatically excluded.
 
 Furthermore after having tested out each of the providers above, I can suggest the following:
-* **Free**: Optimizely or Split.io (Split.io having more statistics features)
+* **Free**: Optimizely or Split.io (Split.io having more statistical features)
 * **Paid**: LaunchDarkly or Optimizely [Full Stack] (LaunchDarkly is easier to use and provides a better experience for rolling out features based on a set of conditions)

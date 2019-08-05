@@ -17,34 +17,34 @@ namespace Provider.Core
         internal enum Provider
         {
             None,
-            Split,
-            LaunchDarkly,
-            Featureflow,
-            Rollout,
-            Optimizely
+            split,
+            launchdarkly,
+            featureflow,
+            rollout,
+            optimizely
         }
 
         public static async Task<IFeatureProvider> GetProvider(string providerName)
         {
             IFeatureProvider provider = null;
             Provider providerEnum = Provider.None;
-            if (Enum.TryParse<Provider>(providerName, out providerEnum))
+            if (Enum.TryParse<Provider>(providerName.ToLower(), out providerEnum))
             {
                 switch(providerEnum)
                 {
-                    case Provider.Split:
+                    case Provider.split:
                         provider = new SplitProvider();
                         break;
-                    case Provider.Rollout:
+                    case Provider.rollout:
                         provider = new RolloutProvider();
                         break;
-                    case Provider.Featureflow:
+                    case Provider.featureflow:
                         provider = new FeatureFlowProvider();
                         break;
-                    case Provider.Optimizely:
+                    case Provider.optimizely:
                         provider = new OptimizelyProvider();
                         break;
-                    case Provider.LaunchDarkly:
+                    case Provider.launchdarkly:
                         provider = new LaunchDarklyProvider();
                         break;
                 }
